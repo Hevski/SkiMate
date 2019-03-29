@@ -1,14 +1,11 @@
 <template lang="html">
-  <div class="">
-      <router-link to="/">Home</router-link>
-  </div>
-
+<h1>helloooo</h1>
 </template>
 
 <script>
 export default {
-}
 
+}
 </script>
 
 <style lang="css" scoped>
