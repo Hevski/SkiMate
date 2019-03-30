@@ -16,25 +16,25 @@ db.skiInfo.insertMany([
   },
   {
     Country: "Scotland",
-    Resort: "Glen Coe",
+    Resort: "Cairngorms",
+    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
+    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
+  },
+  {
+    Country: "Switzerland",
+    Resort: "Zermatt",
+    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
+    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
+  },
+  {
+    Country: "France",
+    Resort: "Valmorel",
     picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
     pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
   },
   {
     Country: "Scotland",
-    Resort: "Glen Coe",
-    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
-    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
-  },
-  {
-    Country: "Scotland",
-    Resort: "Glen Coe",
-    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
-    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
-  },
-  {
-    Country: "Scotland",
-    Resort: "Glen Coe",
+    Resort: "Glen Shee",
     picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
     pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
   }
