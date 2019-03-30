@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import SkiPisteMap from './views/SkiPisteMap.vue'
 
 Vue.use(Router)
 
@@ -11,13 +12,13 @@ export default new Router({
       name: 'home',
       component: Home,
 			props: true
+    },
+    {
+      path: '/skiInfo/:id',
+      name: 'SkiPisteMap',
+      component: SkiPisteMap,
+			props: true
     }
-    // {
-    //   path: '/sweepstakes/:id',
-    //   name: 'singleSweepstake',
-    //   component: SingleSweepstake,
-		// 	props: true
-    // },
     // {
     //   path: '/admin',
     //   name: 'admin-home',
