@@ -1,12 +1,26 @@
 <template lang="html">
-  <div class="">
-    <h1>SkiMate</h1>
-    <section v-if="skis">
-      <draggable id="ski-container">
-			<ski-summary-home v-for="(ski, index) in skis" :key="index" :ski="ski"></ski-summary-home>
+  <div class="skiList-container">
+  <div class="skiList-container">
+    <h1>Places To Go</h1>
+    <section>
+      <draggable id="ski-container" :list="placesToGo">
+			<ski-summary-home v-for="(ski, index) in placesToGo" :key="index" :ski="ski" :index="ski.Resort"></ski-summary-home>
+      <!-- <h1>SkiMate</h1> -->
+			<!-- <ski-summary-home v-for="(ski, index) in placesBeen" :key="index" :ski="ski"></ski-summary-home> -->
     </draggable>
 		</section>
   </div>
+
+  <div class="skiList-container">
+    <h1>Places Been</h1>
+    <section>
+      <draggable id="ski-container" :list="placesBeen">
+      <ski-summary-home v-for="(ski, index) in placesBeen" :key="index" :ski="ski"></ski-summary-home>
+    </draggable>
+    </section>
+  </div>
+</div>
+
 </template>
 
 <script>
@@ -20,14 +34,16 @@ export default {
   },
   data() {
   return {
-    skis: []
+    placesBeen:[],
+    placesToGo:[]
   }
 },
 mounted(){
 		fetch("http://localhost:3000/api/skiInfo/")
 		.then(res => res.json())
-		.then(data => this.skis = data)
-	},
+		.then(data => this.placesToGo = data)
+    // .then(data => this.placesBeen = data)
+  }
 }
 </script>
 
@@ -38,8 +54,13 @@ mounted(){
   flex-direction: column;
 }
 
+#skiList-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width:768px) {
-  #ski-container {
+  #skiList-container {
     flex-direction: row;
     flex-wrap: wrap;
   }

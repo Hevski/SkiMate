@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="zoom">
     <div class="ski-summary" :style="style">
+      <h3>{{ski.Country}}</h3>
       <h3>{{ski.Resort}}</h3>
-      <!-- <router-link :to="{name: 'singleSweepstake', params: {id: this.sweep._id}}" tag="button" class="play-sweep">PLAY</router-link> -->
     </div>
   </div>
 </template>
