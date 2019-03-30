@@ -1,18 +1,22 @@
 <template lang="html">
   <div class="">
     <h1>SkiMate</h1>
-    <section id="ski-container" v-if="skis">
+    <section v-if="skis">
+      <draggable id="ski-container">
 			<ski-summary-home v-for="(ski, index) in skis" :key="index" :ski="ski"></ski-summary-home>
+    </draggable>
 		</section>
   </div>
 </template>
 
 <script>
 import SkiSummaryHome from '../components/SkiSummaryHome.vue';
+import draggable from 'vuedraggable'
 export default {
   name: "Home",
   components: {
-    SkiSummaryHome
+    SkiSummaryHome,
+    draggable
   },
   data() {
   return {

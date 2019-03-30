@@ -14,7 +14,7 @@ export default {
   computed: {
     style () {
       return 'background-image: url(' + this.ski.picture + ');'
-    }
+    },
   }
 }
 </script>
