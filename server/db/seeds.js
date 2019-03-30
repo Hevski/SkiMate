@@ -19,5 +19,23 @@ db.skiInfo.insertMany([
     Resort: "Glen Coe",
     picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
     pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
+  },
+  {
+    Country: "Scotland",
+    Resort: "Glen Coe",
+    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
+    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
+  },
+  {
+    Country: "Scotland",
+    Resort: "Glen Coe",
+    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
+    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
+  },
+  {
+    Country: "Scotland",
+    Resort: "Glen Coe",
+    picture: "https://discoverglencoe.scot/wp-content/uploads/2014/11/2015-January-Winter-Conor-Small-Glenoe-Mountain-Skiing.jpg",
+    pisteMap: "https://cdn.j2ski.com/piste_maps/pm926/GB_S/Glencoe_Piste_Map.jpg"
   }
 ])

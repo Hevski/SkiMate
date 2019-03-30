@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="">
     <h1>SkiMate</h1>
-    <section v-if="skis">
+    <section id="ski-container" v-if="skis">
 			<ski-summary-home v-for="(ski, index) in skis" :key="index" :ski="ski"></ski-summary-home>
 		</section>
   </div>
@@ -28,4 +28,16 @@ mounted(){
 </script>
 
 <style lang="css" scoped>
+
+#ski-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:768px) {
+  #ski-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 </style>

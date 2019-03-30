@@ -39,9 +39,9 @@ h3 {
   border-radius: 10px;
 }
 
-/* div.container {
+div.container {
   padding: 10px;
-} */
+}
 
 .zoom {
   transition: transform .2s;
