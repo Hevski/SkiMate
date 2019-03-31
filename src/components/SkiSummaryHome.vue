@@ -4,7 +4,7 @@
       <h3>{{ski.Country}}</h3>
       <h3>{{ski.Resort}}</h3>
       <div id="app">
-        <button type="button" class="btn" @click="showModal">View Piste Map</button>
+        <!-- <button type="button" class="btn" @click="showModal">View Piste Map</button> -->
       </div>
       <!-- <router-link :to="{name: 'SkiPisteMap', params: {id: this.ski._id, ski: this.ski}}" tag="button">View Piste Map</router-link> -->
     </div>

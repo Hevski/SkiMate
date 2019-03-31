@@ -6,16 +6,13 @@
     <section>
       <draggable id="ski-container" :list="placesToGo">
 			<ski-summary-home v-for="(ski, index) in placesToGo" :key="index" :ski="ski" :index="ski.Resort"></ski-summary-home>
-      
+
       <!-- <h1>SkiMate</h1> -->
 			<!-- <ski-summary-home v-for="(ski, index) in placesBeen" :key="index" :ski="ski"></ski-summary-home> -->
     </draggable>
 		</section>
   </div>
-
-
-
-
+  
   <div class="skiList-container">
     <h1>Places Been</h1>
     <section>
@@ -47,7 +44,6 @@ export default {
     ski:'',
     placesBeen:[],
     placesToGo:[],
-    isModalVisible: false,
   }
 },
 mounted(){
@@ -56,14 +52,6 @@ mounted(){
   .then(data => this.placesToGo = data)
   // .then(data => this.placesBeen = data)
 },
-methods: {
-  showModal() {
-    this.isModalVisible = true;
-  },
-  closeModal() {
-    this.isModalVisible = false;
-  }
- }
 }
 </script>
 
