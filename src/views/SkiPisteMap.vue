@@ -1,6 +1,6 @@
-<template lang="html">
+<!-- <template lang="html">
   <div class="" style="style">
-      <!-- <h1>{{ski.Resort}}</h1> -->
+      <h1>{{ski.Resort}}</h1>
       <h1>Hello?</h1>
   </div>
 
@@ -22,4 +22,4 @@ export default {
 </script>
 
 <style lang="css" scoped>
-</style>
+</style> -->

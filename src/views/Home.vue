@@ -2,6 +2,7 @@
   <div class="skiList-container">
   <div class="skiList-container">
     <h1>Places To Go</h1>
+    <new-area-form></new-area-form>
     <section>
       <draggable id="ski-container" :list="placesToGo">
 			<ski-summary-home v-for="(ski, index) in placesToGo" :key="index" :ski="ski" :index="ski.Resort"></ski-summary-home>
@@ -25,10 +26,12 @@
 
 <script>
 import SkiSummaryHome from '../components/SkiSummaryHome.vue';
+import NewAreaForm from '../components/NewAreaForm.vue';
 import draggable from 'vuedraggable'
 export default {
   name: "Home",
   components: {
+    NewAreaForm,
     SkiSummaryHome,
     draggable
   },
