@@ -1,23 +1,16 @@
-<template lang="html">
+<!-- <template lang="html">
   <div class="zoom">
     <div class="ski-summary" :style="style">
-      <h3>{{ski.Country}}</h3>
-      <h3>{{ski.Resort}}</h3>
-      <div id="app">
-        <button type="button" class="btn" @click="showModal">View Piste Map</button>
-      </div>
-      <!-- <router-link :to="{name: 'SkiPisteMap', params: {id: this.ski._id, ski: this.ski}}" tag="button">View Piste Map</router-link> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "skiSummaryHome",
-  props: ['ski'],
+  props:['ski'],
   computed: {
     style () {
-      return 'background-image: url(' + this.ski.picture + ');'
+      return 'background-image: url(' + this.ski.pisteMap + ');'
     }
   }
 }
@@ -63,4 +56,4 @@ div.container {
     margin: 2%;
   }
 }
-</style>
+</style> -->
