@@ -13,7 +13,7 @@
     <label>piste Map:
       <input type="text" name="pisteMap" value="" v-model="newResort.pisteMap" required>
     </label>
-    <button type="submit" name="button">>Create</button>
+    <button type="submit" name="button">Create</button>
   </form>
 </div>
 
@@ -45,6 +45,8 @@ export default {
         body: JSON.stringify(this.newResort),
         headers: { 'Content-Type': 'application/json'}
       })
+      .then(res => res.json())
+      this.resetForm()
     }
   }
 }

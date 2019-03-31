@@ -3,7 +3,7 @@
     <div class="ski-summary" :style="style">
       <h3>{{ski.Country}}</h3>
       <h3>{{ski.Resort}}</h3>
-      <!-- <router-link :to="{name: 'SkiPisteMap', params: {id: this.ski._id}}" tag="button" class="">View Piste Map</router-link> -->
+      <router-link :to="{name: 'SkiPisteMap', params: {id: this.ski._id, ski: this.ski}}" tag="button">View Piste Map</router-link>
     </div>
   </div>
 </template>

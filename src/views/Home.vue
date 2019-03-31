@@ -2,7 +2,7 @@
   <div class="skiList-container">
   <div class="skiList-container">
     <h1>Places To Go</h1>
-    <new-area-form></new-area-form>
+    <new-area-form :ski="ski"></new-area-form>
     <section>
       <draggable id="ski-container" :list="placesToGo">
 			<ski-summary-home v-for="(ski, index) in placesToGo" :key="index" :ski="ski" :index="ski.Resort"></ski-summary-home>
@@ -20,6 +20,9 @@
     </draggable>
     </section>
   </div>
+  <div class="skiList-container">
+    <h1>blah</h1>
+  </div>
 </div>
 
 </template>
@@ -33,10 +36,11 @@ export default {
   components: {
     NewAreaForm,
     SkiSummaryHome,
-    draggable
+    draggable,
   },
   data() {
   return {
+    ski:'',
     placesBeen:[],
     placesToGo:[]
   }
