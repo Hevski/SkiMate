@@ -17,6 +17,10 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true })
     const skiInfoCollection = db.collection('skiInfo');
     const skiInfoRouter = createRouter(skiInfoCollection);
     app.use('/api/skiInfo', skiInfoRouter);
+
+    const placesBeenCollection = db.collection('placesBeen');
+    const placesBeenRouter = createRouter(placesBeenCollection);
+    app.use('/api/placesBeen', placesBeenRouter);
   })
   .catch(console.err);
 

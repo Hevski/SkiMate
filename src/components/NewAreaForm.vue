@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import {eventBus} from '../main.js'
 export default {
   data(){
     return {
@@ -46,7 +47,7 @@ export default {
         headers: { 'Content-Type': 'application/json'}
       })
       .then(res => res.json())
-      this.resetForm()
+      .then(res => eventBus.$emit('new-resort', res))
     }
   }
 }
